@@ -4,8 +4,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
     spec.name          = "guard-jest"
-    spec.version       = '0.1.1'
-    spec.authors       = ["Nathan Stitt"]
+    spec.version       = '0.1.2'
+    spec.authors       = ["Nathan Stitt", "Mat Holroyd"]
     spec.email         = ["nathan@stitt.org"]
 
     spec.summary       = 'Guard plugin for auto-running Jest specs'
@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
     spec.require_paths = ["lib"]
 
     spec.add_dependency 'guard-compat',    '~> 1.2'
-    spec.add_dependency 'concurrent-ruby', '~> 1.0.4'
+    spec.add_dependency 'concurrent-ruby', '~> 1.0'
 
     spec.add_development_dependency 'rake',        '~> 10.0'
     spec.add_development_dependency 'bundler',     '~> 1.13'
